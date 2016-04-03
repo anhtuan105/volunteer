@@ -11,12 +11,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160330135610) do
+ActiveRecord::Schema.define(version: 20160403021516) do
 
-  create_table "provinces", force: :cascade do |t|
-    t.text     "name",       limit: 65535
-    t.datetime "created_at",               null: false
-    t.datetime "updated_at",               null: false
+  create_table "prefectures", force: :cascade do |t|
+    t.string   "name",       limit: 255
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
   end
 
+  create_table "provinces", force: :cascade do |t|
+    t.string   "name",          limit: 255
+    t.integer  "prefecture_id", limit: 4
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
+  end
+
+  add_index "provinces", ["prefecture_id"], name: "index_provinces_on_prefecture_id", using: :btree
+
+  add_foreign_key "provinces", "prefectures"
 end

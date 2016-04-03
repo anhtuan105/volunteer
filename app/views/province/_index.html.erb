@@ -1,0 +1,92 @@
+
+<div class="headerWrap">
+<div class="headerKv" style="background: grey;"></div>
+      <div class="areaSelectWrap">
+        <h2 class="areaSelectTitle">都道府県からおNPOを探す</h2>
+        <ul class="areaSelectList">
+          <li>
+            <dl>
+              <dt>北海道・東北</dt>
+              <% for pro in @provinces%>
+                <% if pro.prefecture_id == 1 %>
+                  <dd><a href="<%= pro.id %>"><%= pro.name%></a></dd>
+                <% end %>
+              <%end%>
+            </dl>
+          </li>
+          <li>
+            <dl>
+              <dt>関東</dt>
+              <% for pro in @provinces%>
+                <% if pro.prefecture_id == 2 %>
+                  <dd><a href="<%= pro.id %>"><%= pro.name%></a></dd>
+                <% end %>
+              <%end%>
+            </dl>
+          </li>
+          <li>
+            <dl>
+              <dt>北陸・甲信越</dt>
+              <% for pro in @provinces%>
+                <% if pro.prefecture_id == 3 %>
+                  <dd><a href="<%= pro.id %>"><%= pro.name%></a></dd>
+                <% end %>
+              <%end%>
+            </dl>
+          </li>
+          <li>
+            <dl>
+              <dt>中部</dt>
+              <% for pro in @provinces%>
+                <% if pro.prefecture_id == 4 %>
+                  <dd><a href="<%= pro.id %>"><%= pro.name%></a></dd>
+                <% end %>
+              <%end%>
+            </dl>
+          </li>
+          <li>
+            <dl>
+              <dt>関西</dt>
+              <% for pro in @provinces%>
+                <% if pro.prefecture_id == 5 %>
+                  <dd><a href="<%= pro.id %>"><%= pro.name%></a></dd>
+                <% end %>
+              <%end%>
+            </dl>
+          </li>
+          <li>
+            <dl>
+              <dt>中国</dt>
+              <% for pro in @provinces%>
+                <% if pro.prefecture_id == 6 %>
+                  <dd><a href="<%= pro.id %>"><%= pro.name%></a></dd>
+                <% end %>
+              <%end%>
+            </dl>
+          </li>
+          <li>
+            <dl>
+              <dt>四国</dt>
+              <% for pro in @provinces%>
+                <% if pro.prefecture_id == 7 %>
+                  <dd><a href="<%= pro.id %>"><%= pro.name%></a></dd>
+                <% end %>
+              <%end%>
+            </dl>
+          </li>
+          <li>
+            <dl>
+              <dt>九州・沖縄</dt>
+              <% for pro in @provinces%>
+                <% if pro.prefecture_id == 8 %>
+                  <dd><a href="<%= pro.id %>"><%= pro.name%></a></dd>
+                <% end %>
+              <%end%>
+            </dl>
+          </li>
+        </ul>
+      </div>
+</div>
+
+
+
