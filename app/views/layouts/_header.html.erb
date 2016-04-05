@@ -5,14 +5,7 @@
     <title><%= full_title yield(:title) %></title>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= stylesheet_link_tag    'top_design', media: 'all', 'data-turbolinks-track' => true %>
-
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-    <%= javascript_include_tag "abutils", "data-turbolinks-track" => true  %>
-	<%= javascript_include_tag "baconset", "data-turbolinks-track" => true  %>
-	<%= javascript_include_tag "squilla.min", "data-turbolinks-track" => true  %>
-	<%= javascript_include_tag "squilla.init", "data-turbolinks-track" => true  %>
     <%= csrf_meta_tags %>
     <%= render 'layouts/shim' %>
-
-
 </header>

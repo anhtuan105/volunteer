@@ -4,15 +4,6 @@
 Rails.application.config.assets.version = '1.0'
 Rails.application.config.assets.precompile += %w(
   top_design.css
-  jquery-1-10-1-min.js
-  hpr_function.js
-  top.js
-  s_code.js
-  logTeam.js
-  abutils.js
-  baconset.js
-  squilla.min.js
-  squilla.init.js
   # other assets
 )
 
